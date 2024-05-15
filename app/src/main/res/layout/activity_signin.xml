@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SigninActivity"
+    android:background="@color/PrimaryVarient">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logoo"
+
+        tools:ignore="InvalidId" />
+    <EditText
+        android:id="@+id/txtMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edit_style_box"
+        android:hint="E-Posta" />
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMail"
+        android:padding="15dp"
+        android:hint="Parola"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edit_style_box"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPassword"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginVertical="10dp"
+        android:text="Giriş Yap"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_text"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginVertical="10dp"
+        android:text="Kayıt Ol" />
+</RelativeLayout>
